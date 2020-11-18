@@ -34,5 +34,17 @@ imageManager.execute = function (key) {
 }
 setInterval(function(){
     //add a random move
-    console.log('ici')
+    let numberRandom= Math.floor((Math.random()*4))
+    switch (numberRandom){
+        case 0: imageManager.ArrowUp()
+        break;
+        case 1: imageManager.ArrowLeft()
+        break;
+        case 2: imageManager.ArrowRight()
+        break;
+        case 3: imageManager.ArrowDown()
+        break;
+    }
+    
+    console.log('numberRandom')
 },500)
